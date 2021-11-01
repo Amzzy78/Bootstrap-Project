@@ -11,6 +11,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
   </script>
+  <script src="https://kit.fontawesome.com/b41178b84b.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -29,6 +30,13 @@
 
   </nav>
   <article class="container mt-3">
+    <div class="row d-none d-sm-block">
+      <div class="col-12">
+        <div class="alert alert-warning">
+          <strong>Sale Now On!</strong>We've got a sale on. Get a 12 month subscription for the price of 6! <a href="">See here for details!</a>
+        </div>
+      </div>
+    </div>
     <!-- Callout  (to be full width on all screen sizes)-->
     <div class="row">
       <div class="col-12">
@@ -57,19 +65,32 @@
       <div class="row">
         <div class="col-12 col-md-6">
           <!--occupy half the row (medium devices)-->
-          <blockquote class="blockquote">
-            <p>I've been introduced to more than 10 great international whiskeys I never knew about.</p>
-            <p>- Jane Doe</p>
-          </blockquote>
+          <div class="media">
+            <div class="d-none d-sm-block">
+              <img src="images/girl-image.png" class="rounded-circle mr-3" height="100" width="100">
+            </div>
+            <div class="media-body">
+              <blockquote class="blockquote">
+                <p>I've been introduced to more than 10 great international whiskeys I never knew about.</p>
+                <p>- Jane Doe</p>
+              </blockquote>
+            </div>
+          </div>
         </div>
         <div class="col-12 col-md-6">
           <!--occupy half the row (medium devices)-->
-          <blockquote class="blockquote">
-            <p>I haven't been sober for months!</p>
-            <p>- Jane Doe</p>
-          </blockquote>
+          <div class="media">
+            <div class="d-none d-sm-block">
+              <img src="images/guy-image.png" class="rounded-circle mr-3" height="100" width="100">
+            </div>
+            <div class="media-body">
+              <blockquote class="blockquote">
+                <p>I haven't been sober for months!</p>
+                <p>- Jane Doe</p>
+              </blockquote>
+            </div>
+          </div>
         </div>
-      </div>
     </section>
     <!-- /.quotes -->
     <hr>
@@ -85,7 +106,7 @@
         <div class="col-12 col-md-6 col-lg-4">
           <!--col-md-6 occupy half the row (medium devices).. class col-lg-4 is for large screen size-->
           <div class="feature">
-            <h3>Feature 1</h3>
+            <h3><i class="fas fa-gift d-none d-sm-inline"></i> Feature 1 <span class="badge badge-success">NEW!</span></h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore
               magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -97,7 +118,7 @@
         <div class="col-12 col-md-6 col-lg-4">
           <!--occupy half the row on md(medium devices)-->
           <div class="feature">
-            <h3>Feature 2</h3>
+            <h3><i class="fas fa-credit-card d-none d-sm-inline"></i> Feature 2</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore
               magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -109,7 +130,7 @@
         <div class="col-12 d-md-none d-lg-block col-lg-4">
           <!--class d-md-none means no display on medium devices...class d-lg-block to be displayed on large devices-->
           <div class="feature">
-            <h3>Feature 3</h3>
+            <h3><i class="far fa-times-circle d-none d-sm-inline"></i> Feature 3</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore
               magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
