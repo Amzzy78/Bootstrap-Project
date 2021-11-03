@@ -8,6 +8,9 @@
   <title>Whiskey Drop | Taste a new whiskey every month</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
     integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
   </script>
@@ -48,7 +51,7 @@
     </div>
 
   </nav>
-  <article class="container mt-3">
+  <!--<div class="container alert-container">
     <div class="row d-none d-sm-block">
       <div class="col-12">
         <div class="alert alert-warning">
@@ -57,145 +60,157 @@
         </div>
       </div>
     </div>
+    </div>-->
+    <div class="container-fluid callout-container">
     <!-- Callout  (to be full width on all screen sizes)-->
-    <div class="row">
-      <div class="col-12">
-        <section class="callout jumbotron text-center">
-          <h1>The finest whiskeys delivered to your doorstep.</h1>
-          <p class="lead">Sign up today to start receiving the world's best whiskeys every month.
-            <s class="d-none d-sm-inline">€19.99</s>
-            <span class="d-inline d-sm-none"><br></span>
-            <strong><mark>First one is free!</mark></strong></p>
-          <button class="btn btn-success btn-lg" data-toggle="modal" data-target="#signUpModal">Sign up!</button>
-          <p class="text-muted"><small>You must be over 18 to sign up to our service. Please drink responsibly</small>
-          </p>
-        </section>
+    <div class="opaque-overlay">&nbsp;</div>
+      <div class="row">
+        <div class="col-12">
+          <section class="callout jumbotron text-center">
+            <h1 class="jumbotron-header">The finest whiskeys delivered to your doorstep.</h1>
+            <hr class="block-divider block-divider-orange">
+            <p class="lead">Sign up today to start receiving the world's best whiskeys every month.
+              <s class="d-none d-sm-inline">€19.99</s>
+              <span class="d-inline d-sm-none"><br></span>
+              <strong><mark>First one is free!</mark></strong></p>
+            <button class="btn btn-lg btn--cta btn--red" data-toggle="modal" data-target="#signUpModal">Sign up!</button>
+            <p class="text-muted"><small>You must be over 18 to sign up to our service. Please drink responsibly</small>
+            </p>
+          </section>
+        </div>
       </div>
     </div>
-    <!-- /.callout -->
-    <hr>
+      <!-- /.callout -->
+    </div>
 
     <!-- Quotes -->
-    <section class="quotes">
-      <div class="row">
-        <div class="col-12 my-5">
-          <h2 class="text-uppercase">Quotes:</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12 col-md-6">
-          <!--occupy half the row (medium devices)-->
-          <div class="media">
-            <div class="d-none d-sm-block">
-              <img src="images/girl-image.png" class="rounded-circle mr-3" height="100" width="100">
-            </div>
-            <div class="media-body">
-              <blockquote class="blockquote">
-                <p>I've been introduced to more than 10 great international whiskeys I never knew about.</p>
-                <p>- Jane Doe</p>
-              </blockquote>
-            </div>
+    <div class="container quotes-container">
+      <section class="quotes">
+        <div class="row">
+          <div class="col-12 my-5">
+            <h2 class="text-uppercase">Quotes:</h2>
           </div>
         </div>
-        <div class="col-12 col-md-6">
-          <!--occupy half the row (medium devices)-->
-          <div class="media">
-            <div class="d-none d-sm-block">
-              <img src="images/guy-image.png" class="rounded-circle mr-3" height="100" width="100">
-            </div>
-            <div class="media-body">
-              <blockquote class="blockquote">
-                <p>I haven't been sober for months!</p>
-                <p>- Jane Doe</p>
-              </blockquote>
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <!--occupy half the row (medium devices)-->
+            <div class="media">
+              <div class="d-none d-sm-block">
+                <img src="images/girl-image.png" class="rounded-circle mr-3" height="100" width="100">
+              </div>
+              <div class="media-body">
+                <blockquote class="blockquote">
+                  <p>I've been introduced to more than 10 great international whiskeys I never knew about.</p>
+                  <p>- Jane Doe</p>
+                </blockquote>
+              </div>
             </div>
           </div>
-        </div>
-    </section>
-    <!-- /.quotes -->
-    <hr>
+          <div class="col-12 col-md-6">
+            <!--occupy half the row (medium devices)-->
+            <div class="media">
+              <div class="d-none d-sm-block">
+                <img src="images/guy-image.png" class="rounded-circle mr-3" height="100" width="100">
+              </div>
+              <div class="media-body">
+                <blockquote class="blockquote">
+                  <p>I haven't been sober for months!</p>
+                  <p>- Jane Doe</p>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+      </section>
+      <!-- /.quotes -->
+    </div>
 
     <!-- Features -->
-    <section class="features">
-      <div class="row">
-        <div class="col-12 my-5">
-          <h2 class="text-uppercase">Features:</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12 col-md-6 col-lg-4">
-          <!--col-md-6 occupy half the row (medium devices).. class col-lg-4 is for large screen size-->
-          <div class="feature">
-            <h3><i class="fas fa-gift d-none d-sm-inline"></i> Feature 1 <span class="badge badge-success">NEW!</span>
-            </h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore
-              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-              commodo
-              consequat.</p>
-            <p><a class="btn btn-sm btn-light">Read More</a></p>
+    <div class="features-container">
+      <section class="features">
+        <div class="row">
+          <div class="col-12 my-5">
+            <h2 class="text-uppercase">Features:</h2>
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-4">
-          <!--occupy half the row on md(medium devices)-->
-          <div class="feature">
-            <h3><i class="fas fa-credit-card d-none d-sm-inline"></i> Feature 2</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore
-              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-              commodo
-              consequat.</p>
-            <p><a class="btn btn-sm btn-light">Read More</a></p>
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4">
+            <!--col-md-6 occupy half the row (medium devices).. class col-lg-4 is for large screen size-->
+            <div class="feature">
+              <h3><i class="fas fa-gift d-none d-sm-inline"></i> Feature 1 <span class="badge badge-success">NEW!</span>
+              </h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore
+                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo
+                consequat.</p>
+              <p><a class="btn btn-sm btn-light">Read More</a></p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <!--occupy half the row on md(medium devices)-->
+            <div class="feature">
+              <h3><i class="fas fa-credit-card d-none d-sm-inline"></i> Feature 2</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore
+                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo
+                consequat.</p>
+              <p><a class="btn btn-sm btn-light">Read More</a></p>
+            </div>
+          </div>
+          <div class="col-12 d-md-none d-lg-block col-lg-4">
+            <!--class d-md-none means no display on medium devices...class d-lg-block to be displayed on large devices-->
+            <div class="feature">
+              <h3><i class="far fa-times-circle d-none d-sm-inline"></i> Feature 3</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore
+                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo
+                consequat.</p>
+              <p><a class="btn btn-sm btn-light">Read More</a></p>
+            </div>
           </div>
         </div>
-        <div class="col-12 d-md-none d-lg-block col-lg-4">
-          <!--class d-md-none means no display on medium devices...class d-lg-block to be displayed on large devices-->
-          <div class="feature">
-            <h3><i class="far fa-times-circle d-none d-sm-inline"></i> Feature 3</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore
-              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-              commodo
-              consequat.</p>
-            <p><a class="btn btn-sm btn-light">Read More</a></p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--Table-->
-    <table class="table">
-      <thead>
-        <tr>
-          <th scope="col">Name</th>
-          <th scope="col">Origin</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row">1</th>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-        </tr>
-      </tbody>
+      </section>
+      <!--Table-->
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Origin</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+          </tr>
+        </tbody>
 
-      <h2 class="text-uppercase">Monthly favorites:</h2>
-      <div class="features">
-        <h3>Name</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat.</p>
-        <p><a class="btn btn-sm btn-light">Read More</a></p>
-      </div>
-      <div class="feature">
-        <h3>Origin</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat.</p>
-        <p><a class="btn btn-sm btn-light">Read More</a></p>
-      </div>
-    </table>
-    <!-- /.features -->
+        <h2 class="text-uppercase">Monthly favorites:</h2>
+        <div class="features">
+          <h3>Name</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo
+            consequat.</p>
+          <p><a class="btn btn-sm btn-light">Read More</a></p>
+        </div>
+        <div class="feature">
+          <h3>Origin</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo
+            consequat.</p>
+          <p><a class="btn btn-sm btn-light">Read More</a></p>
+        </div>
+      </table>
+      <!-- /.features -->
+    </div>
   </article>
   <div class="modal" tabindex="-1" role="dialog" id="signUpModal">
     <div class="modal-dialog" role="document">
