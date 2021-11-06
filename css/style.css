@@ -131,6 +131,7 @@ body {
 
 .jumbotron {
     background-color: transparent;
+    margin-top: 35px;
 }
 
 .jumbotron-header {
